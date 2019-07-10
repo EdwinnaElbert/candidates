@@ -22,6 +22,7 @@ class CleanName
       r = remove_county_county(r)
       r = replace_and(r)
       r = remove_double_bar(r)
+      r = remove_period(r)
 
       @data << [v["id"], r.strip]
     end
