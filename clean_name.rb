@@ -79,7 +79,7 @@ private
   end
 
   def remove_period(r)
-    r.gsub('Westchester. ', 'Westchester ').gsub(' . ', ' ').gsub('.$', '')
+    r.gsub('Westchester. ', 'Westchester ').gsub(' . ', ' ').gsub(/.$/, '')
   end
 end
 
